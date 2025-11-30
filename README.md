@@ -65,10 +65,6 @@ The login structure we will use in our examples is straightforward. It contains 
 
 Click “Login”. The logged in page will show as below:
 ##  OUTPUT
-
-
-<img width="992" height="917" alt="4" src="https://github.com/user-attachments/assets/72faf406-4eec-4574-b61e-0c6128b660e5" />
-
 If error faced in registration follow the following steps in metasploitable 2:
 
 
@@ -85,45 +81,25 @@ Once nano opens config.inc file, look for the line $dbname = ‘metasploit’ as
 
 
 Replace ‘metasploit’ with ‘owasp10’ and make sure the lines end with semicolon ; as shown in Figure
-##  OUTPUT
-
-
 
 
 Save and exit the config.inc
 Save than exit the config.inc file by typing CTRL+X keys on your keyboard and the Y [Enter] when prompted to save the file
 Restart the Apache server
 To restart Apache, type the following command in the terminal. Alternatively, you can just reboot Metasploitalbe 2 VM.
-sudo /etc/init.d/apache2 reload
-##  OUTPUT
-
-
-
+sudo /etc/init.d/apache2 reloa
 
 # Reset Mutillidae database
 Refresh the page then clicking on the Reset DB menu option to reset the Mutillidae database [Figure ]. Click OK when prompted.
-##  OUTPUT
-
-
-
-
 
 # Test the new configuration
 Alright. Now is time to test if we managed to fix the database issue. Go ahead and register a new account on the Mutillidae webpage.
 
  The Mutillidae database error no longer appears 
-#OUTPUT
-
-
 
 Now after logging out you will see the login page. In the login page give ganesh’ # (myusername). You can see the page now enters into the administrator page as before when giving the password.
-#OUTPUT
-
 
 Click the login button and you will see it enter into the administrator page.
-#OUTPUT
-
-
 
 ## Union-based SQL injection
 
